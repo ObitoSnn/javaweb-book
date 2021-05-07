@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-网上书城，一个基于MVC架构的web项目
+网上书城，一个基于MVC设计模式 + 三层架构的web项目
 
 具体功能
 
@@ -23,7 +23,7 @@
 
 版本v1.0
 
-没有使用框架，采用servlet + JDBC
+没有使用框架，基于MVC设计模式(jsp + servlet + javabean)
 
 版本v2.0
 
@@ -37,4 +37,3 @@
   * spring集成mybatis，SqlSessionFactory、dao对象由spring容器创建
 * 当web项目启动时，使用监听器创建spring容器并将其存入全局作用域ServletContext中，使得系统运行期间只使用一个spring容器里的对象
 * 使用实现aop技术的aspectj框架生成代理对象做事务管理，给所有执行非只读SQL语句的业务方法添加事务管理功能
-
